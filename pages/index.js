@@ -1,5 +1,10 @@
 import Head from "next/head";
-import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import {
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillChrome,
+} from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import jaco from "../public/images/Jaco3.png";
@@ -16,8 +21,7 @@ import firebase from "../public/images/firebase.png";
 import Image from "next/image";
 import slidedepot from "../public/images/slidedepot.png";
 import dorshs from "../public/images/Dorshs.png";
-import genco from "../public/images/genco.png";
-import crowdph from "../public/images/crowdph.png";
+import nf from "../public/images/nf-clone.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -120,47 +124,81 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <p>Slide Depot</p>
+              <div className="mt-2 flex gap-4">
+                <a
+                  href="https://github.com/tactivstudios/slidedepot"
+                  className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
+                >
+                  <AiFillGithub />
+                  Github
+                </a>
+              </div>
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                className="rounded-lg"
+                width={"90%"}
+                height={"90%"}
                 layout="responsive"
                 src={slidedepot}
               />
             </div>
+
             <div className="basis-1/3 flex-1">
-              <p>Genco Pizza</p>
+              <p className="">DORSHS</p>
+              <div className="mt-2 flex gap-4">
+                <a
+                  href="https://dorshs.com/"
+                  className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2 "
+                >
+                  <AiFillChrome />
+                  View Website
+                </a>
+
+                <a
+                  href="https://github.com/nonsense00027/dorshs"
+                  className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
+                >
+                  <AiFillGithub />
+                  Github
+                </a>
+              </div>
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={genco}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <p>DORSHS</p>
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                className="rounded "
+                width={"90%"}
+                height={"90%"}
                 layout="responsive"
                 src={dorshs}
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <p>Crowd PH</p>
+              <p className="">Netflix-Clone</p>
+              <div className="mt-2 flex gap-4">
+                <a
+                  href="https://netflix-clone-tawny-rho.vercel.app/"
+                  className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2"
+                >
+                  <AiFillChrome />
+                  View Website
+                </a>
+
+                <a
+                  href="https://github.com/Jaco-Miras/nf"
+                  className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
+                >
+                  <AiFillGithub />
+                  Github
+                </a>
+              </div>
               <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                className="rounded "
+                width={"90%"}
+                height={"90%"}
                 layout="responsive"
-                src={crowdph}
+                src={nf}
               />
             </div>
           </div>

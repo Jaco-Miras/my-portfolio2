@@ -159,7 +159,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="https://github.com/nonsense00027/dorshs"
+                  href="https://github.com/Jaco-Miras/dorshs"
                   className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
                 >
                   <AiFillGithub />

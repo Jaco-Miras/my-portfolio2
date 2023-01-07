@@ -22,6 +22,7 @@ import Image from "next/image";
 import slidedepot from "../public/images/slidedepot.png";
 import dorshs from "../public/images/Dorshs.png";
 import nf from "../public/images/nf-clone.png";
+import driff from "../public/images/driff.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -128,22 +129,30 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <p>Slide Depot</p>
+              <p>Driff</p>
               <div className="mt-2 flex gap-4">
+                <a
+                  href="https://driff.io/"
+                  className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2 "
+                >
+                  <AiFillChrome />
+                  View Website
+                </a>
+                {/* 
                 <a
                   href="https://github.com/tactivstudios/slidedepot"
                   className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
                 >
                   <AiFillGithub />
                   Github
-                </a>
+                </a> */}
               </div>
               <Image
                 className="rounded-lg"
                 width={"90%"}
                 height={"90%"}
                 layout="responsive"
-                src={slidedepot}
+                src={driff}
               />
             </div>
 
@@ -199,6 +208,33 @@ export default function Home() {
                 height={"90%"}
                 layout="responsive"
                 src={nf}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <p className="">Slide Depot</p>
+              <div className="mt-2 flex gap-4">
+                {/* <a
+                  href="https://netflix-clone-tawny-rho.vercel.app/"
+                  className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2"
+                >
+                  <AiFillChrome />
+                  View Website
+                </a> */}
+
+                <a
+                  href="https://github.com/tactivstudios/slidedepot"
+                  className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
+                >
+                  <AiFillGithub />
+                  Github
+                </a>
+              </div>
+              <Image
+                className="rounded "
+                width={"90%"}
+                height={"90%"}
+                layout="responsive"
+                src={slidedepot}
               />
             </div>
           </div>

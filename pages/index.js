@@ -23,7 +23,6 @@ import slidedepot from "../public/images/slidedepot.png";
 import dorshs from "../public/images/Dorshs.png";
 import nf from "../public/images/nf-clone.png";
 import driff from "../public/images/driff.png";
-import ems from "../public/images/EMS.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);

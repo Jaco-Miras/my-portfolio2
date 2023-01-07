@@ -23,6 +23,7 @@ import slidedepot from "../public/images/slidedepot.png";
 import dorshs from "../public/images/Dorshs.png";
 import nf from "../public/images/nf-clone.png";
 import driff from "../public/images/driff.png";
+import ems from "../public/images/EMS.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -150,7 +151,7 @@ export default function Home() {
               <Image
                 className="rounded-lg"
                 width={"90%"}
-                height={"90%"}
+                height={"50%"}
                 layout="responsive"
                 src={driff}
               />
@@ -178,7 +179,7 @@ export default function Home() {
               <Image
                 className="rounded "
                 width={"90%"}
-                height={"90%"}
+                height={"50%"}
                 layout="responsive"
                 src={dorshs}
               />
@@ -205,7 +206,7 @@ export default function Home() {
               <Image
                 className="rounded "
                 width={"90%"}
-                height={"90%"}
+                height={"50%"}
                 layout="responsive"
                 src={nf}
               />
@@ -232,7 +233,7 @@ export default function Home() {
               <Image
                 className="rounded "
                 width={"90%"}
-                height={"90%"}
+                height={"50%"}
                 layout="responsive"
                 src={slidedepot}
               />

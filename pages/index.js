@@ -127,10 +127,23 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="grid grid-cols-2  gap-20 py-10 lg:flex-row lg:flex-wrap dark:text-white">
             <div className="basis-1/3 flex-1 ">
-              <p>Driff</p>
-              <div className="mt-2 flex gap-4">
+              <p className="my-2">Driff</p>
+
+              <Image
+                className="rounded-lg"
+                width={"90%"}
+                height={"50%"}
+                layout="responsive"
+                src={driff}
+              />
+              <p className="text-justify my-4">
+                It is a web application using React and Redux which allows the
+                users to communicate internally with the employees and
+                externally with the company clients.
+              </p>
+              <div className="my-2 flex gap-4">
                 <a
                   href="https://driff.io/"
                   className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2 "
@@ -147,18 +160,31 @@ export default function Home() {
                   Github
                 </a> */}
               </div>
-              <Image
-                className="rounded-lg"
-                width={"90%"}
-                height={"50%"}
-                layout="responsive"
-                src={driff}
-              />
             </div>
 
             <div className="basis-1/3 flex-1">
-              <p className="">DORSHS</p>
-              <div className="mt-2 flex gap-4">
+              <p className="my-2">DORSHS</p>
+
+              <Image
+                className="rounded "
+                width={"90%"}
+                height={"50%"}
+                layout="responsive"
+                src={dorshs}
+              />
+              <p className="text-justify my-4">
+                is a Web-based school portal built using ReactJS and Firebase.
+                The website serves three (3) types of users: students, teachers,
+                and administrators. The student can enroll, login, submit
+                required paperwork, and check for school announcements as well
+                as their grades on the website. The teacher can access the
+                system and enter grades for his or her students. While the
+                administrator can see all of the students, approve or deny
+                enrollment applications, evaluate active students'
+                documentation, assign teachers to certain sections, and update
+                school announcements.
+              </p>
+              <div className="my-2 flex gap-4">
                 <a
                   href="https://dorshs.com/"
                   className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2 "
@@ -175,16 +201,23 @@ export default function Home() {
                   Github
                 </a>
               </div>
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <p className="my-2">Netflix-Clone</p>
+
               <Image
                 className="rounded "
                 width={"90%"}
                 height={"50%"}
                 layout="responsive"
-                src={dorshs}
+                src={nf}
               />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <p className="">Netflix-Clone</p>
+              <p className="text-justify my-4">
+                It is a personal project that uses NEXTJS Typescript, Firebase.
+                It is a clone of Netflix, the frontend features, authentication
+                of login, register and logout.
+              </p>
               <div className="mt-2 flex gap-4">
                 <a
                   href="https://netflix-clone-tawny-rho.vercel.app/"
@@ -202,16 +235,22 @@ export default function Home() {
                   Github
                 </a>
               </div>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <p className="my-2">Slide Depot</p>
+
               <Image
                 className="rounded "
                 width={"90%"}
                 height={"50%"}
                 layout="responsive"
-                src={nf}
+                src={slidedepot}
               />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <p className="">Slide Depot</p>
+              <p className="text-justify my-4">
+                it is a internal project web based application that provide a
+                storage of all the presentation documents such as powerpoint,
+                etc. It used ReactJs and Django
+              </p>
               <div className="mt-2 flex gap-4">
                 {/* <a
                   href="https://netflix-clone-tawny-rho.vercel.app/"
@@ -229,13 +268,6 @@ export default function Home() {
                   Github
                 </a>
               </div>
-              <Image
-                className="rounded "
-                width={"90%"}
-                height={"50%"}
-                layout="responsive"
-                src={slidedepot}
-              />
             </div>
           </div>
         </section>

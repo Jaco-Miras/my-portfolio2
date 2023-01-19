@@ -23,7 +23,7 @@ import slidedepot from "../public/images/slidedepot.png";
 import dorshs from "../public/images/Dorshs.png";
 import nf from "../public/images/nf-clone.png";
 import driff from "../public/images/driff.png";
-
+import weather from "../public/images/weather-app.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -236,6 +236,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
+
             <div className="basis-1/3 flex-1">
               <p className="my-2">Slide Depot</p>
 
@@ -262,6 +263,39 @@ export default function Home() {
 
                 <a
                   href="https://github.com/tactivstudios/slidedepot"
+                  className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
+                >
+                  <AiFillGithub />
+                  Github
+                </a>
+              </div>
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <p className="my-2">Weather App</p>
+
+              <Image
+                className="rounded "
+                width={"90%"}
+                height={"50%"}
+                layout="responsive"
+                src={weather}
+              />
+              <p className="text-justify my-4">
+                it is a personal project that uses ReactJS and tailwind.
+                WeatherAPI for API and uses axios for fetching API.
+              </p>
+              <div className="mt-2 flex gap-4">
+                <a
+                  href="https://weather-app-ruby-three-20.vercel.app/"
+                  className="bg-[#F49D1A] px-4 py-2 rounded flex items-center gap-2"
+                >
+                  <AiFillChrome />
+                  View Website
+                </a>
+
+                <a
+                  href="https://github.com/Jaco-Miras/weather-app"
                   className="bg-[#333] px-4 py-2 rounded flex items-center gap-2 text-white"
                 >
                   <AiFillGithub />
